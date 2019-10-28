@@ -40,3 +40,61 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Fix NavBar Items
+const navBar = document.querySelectorAll("a");
+console.log(navBar);
+navBar[0].textContent = siteContent["nav"]["nav-item-1"]
+navBar[1].textContent = siteContent["nav"]["nav-item-2"]
+navBar[2].textContent = siteContent["nav"]["nav-item-3"]
+navBar[3].textContent = siteContent["nav"]["nav-item-4"]
+navBar[4].textContent = siteContent["nav"]["nav-item-5"]
+navBar[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
+// navBar.forEach(element => {
+//   element.setAttribute('href', siteContent["nav"] ["nav-item-1"])
+// })
+
+// let navServices = document.getElementById("cta-img");
+// introLogo.setAttribute('src', siteContent["cta"]["img-src"])
+
+//Fixes the intro Title and Get Started Button
+
+const mainHeader = document.querySelector(".cta-text h1");
+mainHeader.textContent = siteContent["cta"] ["h1"]
+
+const mainButton = document.querySelector(".cta-text button");
+mainButton.textContent = siteContent["cta"] ["button"]
+
+// siteContent["cta"] ["cta-text"] ["h1"]
+
+
+//Fixes the img src for the intro
+const introImage = document.getElementById("cta-img");
+introImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+//Fixes the top content of the middle section
+
+const h4Headers = document.querySelectorAll("h4");
+h4Headers[0].textContent = siteContent["main-content"]["features-h4"]
+h4Headers[1].textContent = siteContent["main-content"]["about-h4"]
+h4Headers[2].textContent = siteContent["main-content"]["services-h4"]
+h4Headers[3].textContent = siteContent["main-content"]["product-h4"]
+h4Headers[4].textContent = siteContent["main-content"]["vision-h4"]
+
+const middleText = document.querySelectorAll(".text-content p")
+console.log(middleText);
+middleText[0].textContent = siteContent["main-content"]["features-content"]
+middleText[1].textContent = siteContent["main-content"]["about-content"]
+middleText[2].textContent = siteContent["main-content"]["features-content"]
+middleText[3].textContent = siteContent["main-content"]["about-content"]
+
+
+
+
+// h4Headers[4].textContent = siteContent["contact"]["contact-h4"]
+
+//Fixes the img src for middle
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
