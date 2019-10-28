@@ -118,3 +118,11 @@ contactInfo[0].style.width = '20%';
 const copyright = document.querySelector("footer p");
 console.log(copyright);
 copyright.textContent = siteContent["footer"]["copyright"]
+
+//Button stretch
+
+const buttonEffect = document.getElementsByTagName("button");
+console.log(buttonEffect);
+buttonEffect.addEventListener("click", (event) => {
+  event.target.style.background = 'rebeccapurple';
+});
