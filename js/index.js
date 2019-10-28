@@ -51,13 +51,21 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"]
 navBar[4].textContent = siteContent["nav"]["nav-item-5"]
 navBar[5].textContent = siteContent["nav"]["nav-item-6"]
 
+const parentElement = document.querySelector("nav");
+const newNav1 = document.createElement("a");
+newNav1.textContent = "Blog";
+newNav1.setAttribute("href", "#");
+parentElement.append(newNav1);
 
-// navBar.forEach(element => {
-//   element.setAttribute('href', siteContent["nav"] ["nav-item-1"])
-// })
+const newNav2 = document.createElement("a");
+newNav2.textContent = "Home";
+newNav2.setAttribute("href", "#");
+parentElement.prepend(newNav2);
 
-// let navServices = document.getElementById("cta-img");
-// introLogo.setAttribute('src', siteContent["cta"]["img-src"])
+const navBarGreen = document.querySelectorAll("a");
+navBarGreen.forEach(element => {
+  element.style.color = "green";
+})
 
 //Fixes the intro Title and Get Started Button
 
@@ -66,9 +74,6 @@ mainHeader.textContent = siteContent["cta"] ["h1"]
 
 const mainButton = document.querySelector(".cta-text button");
 mainButton.textContent = siteContent["cta"] ["button"]
-
-// siteContent["cta"] ["cta-text"] ["h1"]
-
 
 //Fixes the img src for the intro
 const introImage = document.getElementById("cta-img");
