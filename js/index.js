@@ -82,19 +82,19 @@ h4Headers[1].textContent = siteContent["main-content"]["about-h4"]
 h4Headers[2].textContent = siteContent["main-content"]["services-h4"]
 h4Headers[3].textContent = siteContent["main-content"]["product-h4"]
 h4Headers[4].textContent = siteContent["main-content"]["vision-h4"]
+h4Headers[5].textContent = siteContent["contact"]["contact-h4"]
 
 const middleText = document.querySelectorAll(".text-content p")
 console.log(middleText);
 middleText[0].textContent = siteContent["main-content"]["features-content"]
 middleText[1].textContent = siteContent["main-content"]["about-content"]
-middleText[2].textContent = siteContent["main-content"]["features-content"]
-middleText[3].textContent = siteContent["main-content"]["about-content"]
-
-
-
-
-// h4Headers[4].textContent = siteContent["contact"]["contact-h4"]
+middleText[2].textContent = siteContent["main-content"]["services-content"]
+middleText[3].textContent = siteContent["main-content"]["product-content"]
+middleText[4].textContent = siteContent["main-content"]["vision-content"]
 
 //Fixes the img src for middle
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//Fixes the contact section
+
