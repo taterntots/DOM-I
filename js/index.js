@@ -72,6 +72,8 @@ navBarGreen.forEach(element => {
 const mainHeader = document.querySelector(".cta-text h1");
 mainHeader.textContent = siteContent["cta"] ["h1"]
 
+mainHeader.innerHTML = siteContent ["cta"] ["h1"].replace(/ /g, "<br>");
+
 const mainButton = document.querySelector(".cta-text button");
 mainButton.textContent = siteContent["cta"] ["button"]
 
