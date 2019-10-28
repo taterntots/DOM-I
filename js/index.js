@@ -98,3 +98,14 @@ middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 //Fixes the contact section
 
+const contactInfo = document.querySelectorAll(".contact p");
+console.log(contactInfo);
+contactInfo[0].textContent = siteContent["contact"]["address"]
+contactInfo[1].textContent = siteContent["contact"]["phone"]
+contactInfo[2].textContent = siteContent["contact"]["email"]
+
+//Fixes the footer
+
+const copyright = document.querySelector("footer p");
+console.log(copyright);
+copyright.textContent = siteContent["footer"]["copyright"]
