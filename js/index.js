@@ -109,6 +109,8 @@ contactInfo[0].textContent = siteContent["contact"]["address"]
 contactInfo[1].textContent = siteContent["contact"]["phone"]
 contactInfo[2].textContent = siteContent["contact"]["email"]
 
+contactInfo[0].style.width = '20%';
+
 //Fixes the footer
 
 const copyright = document.querySelector("footer p");
