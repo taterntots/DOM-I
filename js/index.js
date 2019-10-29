@@ -121,8 +121,10 @@ copyright.textContent = siteContent["footer"]["copyright"]
 
 //Button stretch
 
-const buttonEffect = document.getElementsByTagName("button");
+const buttonEffect = document.querySelector("button");
 console.log(buttonEffect);
 buttonEffect.addEventListener("click", (event) => {
   event.target.style.background = 'rebeccapurple';
+  document.body.textContent = 'oh no...';
+  document.body.style.fontSize = "400px";
 });
